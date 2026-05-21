@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-01</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="theme-btn" class="theme-toggle-btn" onclick="toggleTheme()">
+      🌙 Dark Mode
+    </button>
+    <div class="container">
+      <h1>Rock, Paper, Scissor Game</h1>
+
+      <div class="game-container">
+        <div class="icon-circle rock" onclick="input(0)">✊</div>
+        <div class="icon-circle paper" onclick="input(1)">✋</div>
+        <div class="icon-circle scissors" onclick="input(2)">✌️</div>
+      </div>
+
+      <!--For Result Display-->
+      <div class="resultdiv">
+        <h2>Result: <span id="result">Waiting for your move...</span></h2>
+
+        <div class="score-board">
+          <div class="score-box">
+            <p>You</p>
+            <span id="you_win">0</span>
+            <div class="current-choice" id="user_move">—</div>
+          </div>
+
+          <div class="score-box">
+            <p>Computer</p>
+            <span id="computer_win">0</span>
+            <div class="current-choice" id="computer_move">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
