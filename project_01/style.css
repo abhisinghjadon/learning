@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: darkslateblue;
+  --container-bg: aliceblue;
+  --text-color: #333333;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --container-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-text: #121212;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 0;
+  padding: 10px;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.container {
+  background-color: var(--container-bg);
+  transition: background-color 0.3s ease;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #f17a9b, #b392cd, #8faedb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.game-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: rgb(218, 86, 86);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.icon-circle:hover {
+  transform: scale(1.15);
+}
+.rock {
+  background-color: #f17a9b;
+}
+
+.paper {
+  background-color: #b392cd;
+}
+
+.scissors {
+  background-color: #8faedb;
+}
+.resultdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.score-box {
+  text-align: center;
+  font-size: 20px;
+}
+
+.score-box span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.green-text {
+  color: #2ecc71;
+}
+
+.red-text {
+  color: #e74c3c;
+}
+
+.gray-text {
+  color: #95a5a6;
+}
+.current-choice {
+  font-size: 40px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.theme-toggle-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
