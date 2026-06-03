@@ -1,0 +1,42 @@
+full function of this chapter
+add direct in object 
+object.key="value"
+
+modify direct in object 
+object.key=" new value"
+
+delete direct in object 
+delete object.key
+
+for (let key in myCar) 
+catch all keys in key name variable of object 
+
+key Exist or NOT 
+ obj.hasOwnProperty("key)
+ if exist then true else false 
+
+merge Using the Spread Operator (...) use in modern
+const obj3 = { ...obj1, ...obj2 };
+
+ Ye pehle khali object {} mein baaki saare objects ka data copy kar deta hai
+const obj3 = Object.assign({}, obj1, obj2);
+
+deep copy banane ke liye 
+// const copy = structuredClone(original);
+
+/ Convert Object to JSON String
+const jsonString = JSON.stringify(obj);
+
+// Convert JSON String back to Object
+const userObj = JSON.parse(jsonResponse);
+
+// Count the properties
+const propertyCount = Object.keys(obj).length;
+
+// Convert the object to an array of key-value pairs
+const keyValuePairs = Object.entries(obj);
+
+logic of sort 
+products.sort((a, b) => a.price - b.price);
+
+
