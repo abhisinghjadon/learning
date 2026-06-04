@@ -1,0 +1,36 @@
+76.js
+// --- 1. FUNCTION DECLARATION ---
+function function_name (name) {
+  return `Hello ${name} from Function Declaration!`;
+}
+
+// --- 2. FUNCTION EXPRESSION ---
+const function_name = function (name) {
+  return `Hello ${name} from Function Expression!`;
+};
+
+// --- 3. ARROW FUNCTION (ES6+) ---
+const function_name = (name) => `Hello ${name} from Arrow Function!`;
+
+console.log(function_name("Abhishek")); // Output: Hello Abhishek from Function Declaration!
+
+77.js
+function function_name (name, callback) {
+  console.log(`Processing data for: ${name}...`);
+  callback(name);
+}
+
+// function pass karte waqt parenthesis '()' nahi lagate, sirf naam likhte hain
+process("Abhishek", sayHello);
+
+// Processing data for: Abhishek...
+// Hello Abhishek! Welcome aboard.
+
+78.js
+
+// Higher-Order Function: Yeh function ek naya function bana kar return karega
+function createMultiplier(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
