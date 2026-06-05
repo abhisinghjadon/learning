@@ -1,0 +1,3 @@
+use setTimeout-> only delay and one time run
+use setIntervel-> run in loop after delay 
+use clearInterval -> remove/ stop interval 
