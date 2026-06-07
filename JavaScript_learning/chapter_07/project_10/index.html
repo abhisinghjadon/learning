@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="project 10" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>
+        Project 10: Accordion Content Box: <br />
+        A header block that expands/collapses an underlying text details
+        description panel when clicked.
+      </h2>
+      <br />
+      <div class="header">
+        Question 1 : What is the difference between == and === operators?
+        <span class="but" onclick="openbox('a1')" id="q1">+</span>
+        <span class="but" onclick="closebox('a1')" id="o1" style="display: none"
+          >-</span
+        >
+      </div>
+
+      <div class="answer" id="a1">
+        Answer
+        <ul>
+          <li>
+            <strong>== (Loose Equality / Abstract Equality):</strong> This
+            operator compares two values for equality after converting both
+            values to a common type (this process is called Type Coercion). For
+            example, 5 == "5" will return true because JavaScript converts the
+            string "5" into a number before comparing.
+          </li>
+          <li>
+            <strong>=== (Strict Equality):</strong> This operator compares both
+            the value and the data type without doing any type conversion. If
+            the types are different, it immediately returns false. Therefore, 5
+            === "5" returns false because a number type is not equal to a string
+            type.
+          </li>
+        </ul>
+      </div>
+
+      <div class="header">
+        Question 2: What is Event.preventDefault() and why do we use it in
+        forms?
+        <span class="but" onclick="openbox('a2')" id="q2">+</span>
+        <span class="but" onclick="closebox('a2')" id="o2" style="display: none"
+          >-</span
+        >
+      </div>
+
+      <div class="answer" id="a2">
+        Answer
+        <br />
+        Event.preventDefault() is a built-in JavaScript method that stops the
+        default action belonging to an event from happening.
+        <ul>
+          <li>
+            <strong> Default Behavior:</strong> When you click a "Submit" button
+            inside an HTML form, the browser automatically tries to refresh the
+            entire webpage and send the data to the URL specified in the form
+            action.
+          </li>
+          <li>
+            <strong>Why we use it:</strong> In modern web apps, we want to
+            intercept this process so we can validate the user input (e.g.,
+            checking if the email format is correct) before sending it to a
+            database using APIs. Calling e.preventDefault() freezes the browser
+            from refreshing, allowing our custom JavaScript validation logic to
+            run.
+          </li>
+        </ul>
+      </div>
+
+      <div class="header">
+        Question 3: What is the difference between element.style.cssText and
+        element.style.property?
+        <span class="but" onclick="openbox('a3')" id="q3">+</span>
+        <span class="but" onclick="closebox('a3')" id="o3" style="display: none"
+          >-</span
+        >
+      </div>
+
+      <div class="answer" id="a3">
+        <strong>Answer:</strong>
+        <br />
+        Both are used to modify the inline CSS styles of an HTML element via
+        JavaScript, but they handle multiple properties differently:
+        <ul>
+          <li>
+            <strong>element.style.property</strong> (e.g.,
+            <code>.style.color = "red"</code>): Modifies or adds one specific
+            CSS property at a time. It keeps any other existing inline styles
+            completely safe and untouched.
+          </li>
+          <li>
+            <strong>element.style.cssText</strong> (e.g.,
+            <code>.style.cssText = "color: red; display: block;"</code>): Allows
+            you to apply a whole raw string of CSS rules all at once using
+            semicolons.
+          </li>
+        </ul>
+        <p style="color: orange; font-weight: bold">
+          Warning: cssText is destructive. It completely overwrites and deletes
+          all previous inline styles on that element, replacing them entirely
+          with the new string.
+        </p>
+      </div>
+
+      <div class="header">
+        Question 4: How does setInterval() work and how do you stop it?
+        <span class="but" onclick="openbox('a4')" id="q4">+</span>
+        <span class="but" onclick="closebox('a4')" id="o4" style="display: none"
+          >-</span
+        >
+      </div>
+
+      <div class="answer" id="a4">
+        <strong>Answer:</strong>
+        <br />
+        <code>setInterval()</code> is a timing function used to repeatedly
+        execute a specific piece of code or function at fixed time intervals
+        (measured in milliseconds). For example, updating an automatic image
+        carousel every 10 seconds.
+
+        <ul>
+          <li>
+            <strong>How it works:</strong> When you declare
+            <code>setInterval(myFunction, 10000)</code>, it returns a unique
+            numeric identification code called an <strong>Interval ID</strong>.
+          </li>
+          <li>
+            <strong>How to stop it:</strong> To halt the timer permanently, you
+            must capture that specific Interval ID into a variable and pass it
+            inside JavaScript's built-in <code>clearInterval()</code> function.
+          </li>
+        </ul>
+      </div>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
