@@ -1,0 +1,13 @@
+* {
+  margin: 10px;
+  padding: 5px;
+}
+
+.Container {
+  width: 70%;
+  height: 500px;
+  align-self: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+}
