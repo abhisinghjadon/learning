@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Project 8: Simple Image Slider: <br />
+      Next and Previous buttons that switch the source URL image element
+      sequentially from a local list array.
+    </h2>
+    <div class="Container">
+      <h3>Container</h3>
+      <img
+        id="myImage"
+        src="10101.jpg"
+        alt="Slider"
+        width="80%"
+        height="80%"
+        object-fit="cover"
+      />
+      <button id="previous" style="float: left" onclick="change('prev')">
+        Previous
+      </button>
+      <button id="next" style="float: right" onclick="change('next')">
+        Next
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
