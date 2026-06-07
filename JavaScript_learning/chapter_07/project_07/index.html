@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Project 7: Form Submission & Validation: <br />
+      A form with email and password inputs that shows error text messages below
+      inputs if values are empty or invalid on submit.
+    </h2>
+    <form id="form">
+      <label>Email:</label>
+      <input
+        id="inputemail"
+        type="text"
+        placeholder="Enter your Mail Here..."
+      />
+      <span id="erremail" style="display: none">Invalid Email</span>
+      <br />
+      <label>Password:</label>
+      <input
+        id="inputpass"
+        type="password"
+        placeholder="Enter your Password Here..."
+      />
+      <span id="errpass" style="display: none">Password is Weak....</span>
+      <br />
+      <button type="submit">submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
