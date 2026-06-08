@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 12</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Project 12: Persistent To-Do List: <br />
+      Update the previous To-Do App to save the items array into localStorage so
+      it reloads on page refresh.
+    </h2>
+    <div id="myForm">
+      <label
+        ><b>Add Title:</b> <br />
+        <input id="myTitle" type="text" /><br
+      /></label>
+
+      <label
+        ><b>Add Discription</b>
+        <br />
+        <textarea id="myDiscription" cols="50" rows="5"></textarea>
+      </label>
+      <br />
+      <button onclick="addnew()" id="btnSubmit">Add</button>
+    </div>
+
+    <table id="myTable" style="border: 2px solid black">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Title</th>
+          <th>Discription</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
