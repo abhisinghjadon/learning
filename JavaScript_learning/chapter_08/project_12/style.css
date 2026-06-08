@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+}
+body {
+  padding: 10px;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  max-width: 500px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+#myForm input,
+#myForm label,
+#myForm button {
+  width: 100%;
+  box-sizing: border-box;
+}
+#myDiscription {
+  width: 500px;
+}
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+  background-color: #30427c;
+  color: #ffffff;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
