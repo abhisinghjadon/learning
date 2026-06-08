@@ -1,0 +1,11 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: 15% auto;
+  font-size: 7rem;
+}
