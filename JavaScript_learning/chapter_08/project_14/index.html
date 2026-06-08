@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 14</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Project 14: Stopwatch Timer</h1>
+    <h2>
+      Features Start, Pause, and Reset buttons tracking minutes, seconds, and
+      milliseconds with precision intervals.
+    </h2>
+
+    <div class="Container">
+      <span id="hours">00</span>
+      <span>:</span>
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      <span> </span>
+      <span id="times"></span>
+    </div>
+    <div class="buttonconta">
+      <button id="btn" onclick="startTimer()">Start</button>
+      <button onclick="report()">Report</button>
+    </div>
+    <table id="myTable" style="border: 2px solid black">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th width="70%">Time</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
