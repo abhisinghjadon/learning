@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #ccc;
+}
+
+nav li {
+  padding: 12px 24px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav li:hover {
+  background-color: #ddd;
+}
+
+#home,
+#about,
+#contact {
+  padding: 20px;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* Sirf ye dono classes display control karengi */
+.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+span {
+  font-size: 3rem;
+}
