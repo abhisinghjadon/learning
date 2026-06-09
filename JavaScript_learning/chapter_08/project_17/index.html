@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <h1>Project 17: Interactive Modal Popup window:</h1>
+      <h2>
+        A button triggers a overlay modal window popup, which closes when
+        clicking an 'X' icon or outside the modal boundary space.
+      </h2>
+      <button id="btn" onclick="openfun()">open</button>
+    </div>
+    <div id="container" style="display: none">
+      <div id="popup">
+        <div id="nav" onclick="closefu()">X</div>
+        <div id="form">
+          <label>Username:<input type="text" id="username" /></label>
+          <label>Password: <input type="password" /></label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
