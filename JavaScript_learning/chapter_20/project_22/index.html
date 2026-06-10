@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 22</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Project 22: Live Crypto Price Dashboard:</h1>
+    <h2>
+      Fetches live pricing for popular cryptocurrencies every 30 seconds and
+      shows updates inside a structured HTML table block.
+    </h2>
+    let $1=₹95
+    <div>
+      <p>
+        <b>Price in($ USD):</b>
+        <span id="dis">NO data Available</span><br />
+        <b>Price in(₹ IND):</b>
+        <span id="indianPrice">NO data Available</span>
+        <br />
+        <b>Time:</b>
+        <span id="time"></span>
+      </p>
+      <button onclick="getCryptoPrice()">Reload data</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
