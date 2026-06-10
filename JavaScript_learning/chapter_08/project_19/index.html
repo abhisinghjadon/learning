@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Project 19: Filterable Items Search List:</h1>
+    <h2>
+      A text input field that dynamically hides list items on screen if their
+      text content does not match the typed string query.
+    </h2>
+    <nav>
+      <!-- <label for="">Filter:<input type="text" id="input" /></label>
+      <button onclick="Search()">Search</button> -->
+      <input
+        type="text"
+        id="inputa"
+        placeholder="Type to search..."
+        oninput="Search()"
+      />
+    </nav>
+    <ul>
+      <li>Hello</li>
+      <li>Mango</li>
+      <li>Banana</li>
+      <li>Papaya</li>
+      <li>Date</li>
+      <li>Tomato</li>
+      <li>Hello world</li>
+      <li>Mango is a Fruit King</li>
+      <li>Apple is Taste</li>
+      <li>Grapes ,Banana,mango</li>
+    </ul>
+    <p
+      id="notFoundMessage"
+      style="display: none; color: red; font-weight: bold"
+    >
+      No Results Found
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
