@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Atmospheric Summary & Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Current Location Weather App</h1>
+      <h2>
+        Integrates a free weather endpoint to fetch atmospheric summaries based
+        on user city input, changing custom icons according to state condition
+        strings.
+      </h2>
+    </header>
+
+    <nav id="navbar">
+      <div class="nav-item active-tab" data-target="home-section">Home</div>
+      <div class="nav-item" data-type="current">Current Weather</div>
+      <div class="nav-item" data-type="forecast">Weather Forecast</div>
+      <div class="nav-item" data-type="history">Custom Last Date Weather</div>
+      <div class="nav-item" data-type="astronomy">Astronomy Insights</div>
+    </nav>
+
+    <main>
+      <div id="home-section" class="tab-content">
+        <div id="city-container" style="display: inline-block">
+          <label for="city"><strong>Enter Your City:</strong></label>
+          <input type="text" id="city" placeholder="e.g. Aligarh" />
+        </div>
+
+        <div id="date-container" style="display: none; margin-left: 10px">
+          <label for="weather-date"><strong>Select Date:</strong></label>
+          <input type="date" id="weather-date" value="2026-06-08" />
+        </div>
+
+        <button id="searchBtn" style="margin-left: 10px">Search Weather</button>
+      </div>
+
+      <section id="display"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
