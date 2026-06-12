@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 30 - Expense Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="dashboard-header">
+        <h1>Project 30: Expense Tracker Dashboard</h1>
+        <p class="subtitle">
+          Local storage configuration logging categories and price inputs
+          updating reactive balance tallies alongside an interactive functional
+          tracking ledger list.
+        </p>
+      </header>
+
+      <nav class="main-navigation">
+        <div class="nav-item" onclick="renderHomeDashboard()">Home</div>
+        <div class="nav-item" onclick="toggleLedgerForm()">Add Ledger</div>
+        <div class="nav-item balance-btn" onclick="balance()">Balance</div>
+        <div id="allLedger" class="ledger-nav-group"></div>
+      </nav>
+
+      <main class="content-area">
+        <div id="add" class="hide card">
+          <h3>Add New Ledger</h3>
+          <div class="form-group">
+            <label for="nameLedger">Title of ledger</label>
+            <input
+              type="text"
+              id="nameLedger"
+              placeholder="e.g., Monthly Groceries"
+            />
+          </div>
+          <button
+            type="submit"
+            id="btnSubmit"
+            class="btn btn-primary"
+            onclick="addNewLedger()"
+          >
+            Add
+          </button>
+        </div>
+
+        <div id="balance" class="hide card balance-card"></div>
+
+        <div id="details" class="card"></div>
+
+        <div id="update" class="hide card">
+          <h3>Update Ledger Entries</h3>
+          <div class="form-group">
+            <label for="newTitle">New Expense</label>
+            <input
+              type="text"
+              id="newTitle"
+              placeholder="e.g., Internet Bill"
+            />
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="0.00" />
+          </div>
+          <button
+            id="btnSubmitUpdate"
+            class="btn btn-success"
+            onclick="updateled()"
+          >
+            Save Changes
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 30</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Project 30: Expense Tracker Dashboard with Visual List Summary:</h1>
+    <h2>
+      Local storage configuration logging categories and price inputs updating
+      reactive balance tallies alongside an interactive functional tracking
+      ledger list.
+    </h2>
+    <nav>
+      <div>Home</div>
+      <div onclick="toggleLedgerForm()">Add Leger</div>
+      <div id="allLedger"></div>
+      <div onclick="balance()">Balance</div>
+    </nav>
+    <div id="add" class="hide">
+      Add New Ledger
+      <label for="nameLedger"
+        >Title of ledger:
+        <input type="text" id="nameLedger" />
+      </label>
+      <br />
+      <button type="submit" id="btnSubmit" onclick="addNewLedger()">Add</button>
+    </div>
+    <div id="balance" class="hide"></div>
+    <div id="details"></div>
+    <div id="update" class="hide">
+      <label for="">new Expence : <input type="text" id="newTitle" /></label>
+      <br />
+      <label for="">Amount : <input type="text" id="amount" /></label>
+      <button id="btnSubmitUpdate" onclick="updateled()">Save Changes</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
