@@ -1,0 +1,36 @@
+#box {
+  width: 200px;
+}
+
+#result {
+  width: 300px; /* Thoda wide kiya taaki bade naam fit ho sakein */
+  background-color: #ffffff; /* Grey ki jagah clean white background */
+  max-height: 250px; /* Fix height ki jagah max-height jo scrollbar banayega */
+  overflow-y: auto; /* Agar items zyada honge toh scrollbar aa jayega */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Google jaisa shadow effect */
+  font-family: Arial, sans-serif;
+}
+
+/* List ki styling */
+#result ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Har ek suggestion line ki styling */
+#result ul li {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Jab mouse kisi naam par jaye (Hover effect) */
+#result ul li:hover {
+  background-color: #f1f3f4; /* Light grey background on hover */
+  color: #000;
+}
