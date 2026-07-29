@@ -9,7 +9,6 @@ min = max;
 for (let i = 0; i < data.length; i++) {
   val = data[i];
   if (val > max) max = val;
-
   if (val < min) min = val;
 }
 
