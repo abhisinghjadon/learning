@@ -1,3 +1,4 @@
+// Program 4: Find the maximum of three numbers.
 
 const prompt = require("prompt-sync")();
 
