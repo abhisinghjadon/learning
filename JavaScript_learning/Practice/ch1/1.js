@@ -13,5 +13,6 @@ for (let i = 0; i < data.length; i++) {
   if (val < min) min = val;
 }
 
+
 console.log(`Minimun value ${min}`);
 console.log(`Maximun value ${max}`);
