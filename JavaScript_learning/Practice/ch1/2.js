@@ -1,5 +1,4 @@
-// Program 4: Find the maximum of three numbers.
-fgdfkbndk
+
 const prompt = require("prompt-sync")();
 
 const num1 = Number(prompt("Enter the First Number:"));
