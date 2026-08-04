@@ -4,3 +4,6 @@ function intimul(num1) {
     return num1 * num2;
   };
 }
+
+const mul1 = intimul(5);
+console.log(mul1(3));
