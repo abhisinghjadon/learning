@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Display System</title>
+    <style>
+      #cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      #display {
+        background-color: rgb(188, 185, 185);
+        font-size: larger;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border: 4px dotted black;
+        border-radius: 5px;
+        padding: 10px;
+        min-width: 200px; /* Empty hone par bhi box sahi dikhega */
+      }
+      #text {
+        margin: 0;
+        white-space: pre-wrap;
+        min-height: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Input Display System</h1>
+
+    <div id="cont">
+      <div id="display">
+        <p id="text"></p>
+      </div>
+    </div>
+
+    <label for="input">
+      Add Text To Display:
+      <textarea id="input" cols="30" rows="4"></textarea>
+    </label>
+
+    <script src="9.js"></script>
+  </body>
+</html>
