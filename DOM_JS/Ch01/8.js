@@ -7,6 +7,7 @@ Syntax Focus: element.style.property.
 const box = document.getElementById("box");
 const btn = document.getElementById("button");
 
+
 btn.addEventListener("click", () => {
   if (btn.innerText == "Dark") {
     box.style.cssText =
