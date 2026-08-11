@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Popup Example</title>
+    <style>
+      .hidden {
+        display: none !important;
+      }
+
+      #modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      #modal {
+        position: relative;
+        border: 2px solid #333;
+        border-radius: 8px;
+        background-color: cornflowerblue;
+        padding: 24px;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 14px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      input {
+        width: 100%;
+        padding: 6px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modal Popup Overlay</h1>
+
+    <button id="open-btn" onclick="toggleModal()">Login</button>
+
+    <!-- Modal Backdrop and Popup -->
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <span class="close-btn" onclick="toggleModal()">&times;</span>
+        <form onsubmit="handleSubmit(event)">
+          <label for="username">
+            Username:
+            <input type="text" id="username" required />
+          </label>
+          <label for="password">
+            Password:
+            <input type="password" id="password" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="5.js"></script>
+  </body>
+</html>
