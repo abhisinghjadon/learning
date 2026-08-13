@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .simple {
+        border: 2px solid black;
+        outline: none;
+      }
+
+      .simple.error {
+        border: 2px solid red;
+      }
+
+      .simple.focus {
+        border: 2px solid lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Validation</h1>
+    <form action="" id="myForm">
+      <label for="inp1"
+        >Usename:
+        <input type="text" class="simple" id="inp1" />
+      </label>
+      <br />
+      <br />
+      <label for="inp2"
+        >Password:
+        <input type="text" class="simple" id="inp2" />
+      </label>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="5.js"></script>
+  </body>
+</html>
