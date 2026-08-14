@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        background-color: rgba(230, 226, 226, 0.744);
+        color: dodgerblue;
+        font-size: 30px;
+        border: 1px solid black;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        position: absolute;
+      }
+      #menu span {
+        text-decoration: underline black;
+        margin: 5px;
+      }
+      #menu span:hover {
+        text-decoration: underline rgb(209, 36, 157);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Custom Context Menu (Right-Click Interception)</h1>
+
+    <div id="menu">
+      <span>Link 1</span>
+      <span>Link 2</span>
+      <span>Link 3</span>
+      <span>Link 4</span>
+      <span>Link 5</span>
+    </div>
+    <script src="10.js"></script>
+  </body>
+</html>
