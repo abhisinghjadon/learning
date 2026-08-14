@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 10px;
+        color: white;
+        background-color: black;
+      }
+      #cont {
+        width: 98%;
+        height: 50vh;
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 5px;
+        background-color: rgb(192, 191, 191);
+        text-align: center;
+        font-size: 50px;
+      }
+      #cont:hover {
+        border: 10px solid rgb(0, 255, 68);
+        font-weight: 900;
+        background-size: 5px 5px;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(202, 241, 4, 0.918) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(217, 255, 0, 0.15) 1px,
+            transparent 1px
+          );
+      }
+      .display {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Real time Coordinate Display</h1>
+    <div class="display">
+      Coordinate: <br /><br />
+      X:<span id="x"></span>
+      <span> </span>
+      Y:<span id="y"></span>
+    </div>
+    <div id="cont"><br /><br />Drag in Box</div>
+    <script src="6.js"></script>
+  </body>
+</html>
