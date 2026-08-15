@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      thead {
+        background-color: black;
+        color: white;
+        font-size: medium;
+      }
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Node Removal</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Title</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="li1">
+          <td>1.</td>
+          <td>List</td>
+          <td><button onclick="rem('li1')">Delete</button></td>
+        </tr>
+        <tr id="li2">
+          <td>2.</td>
+          <td>List</td>
+          <td><button onclick="rem('li2')">Delete</button></td>
+        </tr>
+        <tr id="li3">
+          <td>3.</td>
+          <td>List</td>
+          <td><button onclick="rem('li3')">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="3.js"></script>
+  </body>
+</html>
