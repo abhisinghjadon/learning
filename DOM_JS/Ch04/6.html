@@ -1,1 +1,58 @@
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 5px;
+        padding: 2px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      thead {
+        background-color: black;
+        color: white;
+        font-size: medium;
+      }
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic Todo List Builder</h1>
+    <div>
+      <form action="">
+        <label for="Title"
+          >Title:
+          <input type="text" id="Title" />
+        </label>
+        <br />
+        <label for="Des"
+          >Description:
+          <input type="text" id="Des" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <td>S.No</td>
+            <td>Title</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="6.js"></script>
+  </body>
+</html>
