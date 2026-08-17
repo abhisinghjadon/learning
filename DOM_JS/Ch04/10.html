@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 400px;
+      }
+
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .form-group label {
+        font-weight: bold;
+      }
+
+      input {
+        width: 250px;
+        padding: 6px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: fit-content;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+
+      table {
+        margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background-color: black;
+        color: white;
+        font-size: medium;
+      }
+
+      td,
+      th {
+        border: 1px dotted black;
+        padding: 8px;
+        text-align: center;
+      }
+      #Total{
+          text-align: left;
+          font-size: 20px;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Shopping List with Total Calculation</h1>
+
+    <form action="" id="form">
+      <div class="form-group">
+        <label for="name">Name of Product :</label>
+        <input type="text" id="name" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input  id="price"  required/>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+<div id="bill">
+  <table>
+    <thead>
+      <th>S.NO</th>
+      <th>Name of Product</th>
+      <th>Price</th>
+      <tbody>
+        <tr id="TotalRow" >
+          <th colspan="2" id="Total">Total</th>
+          <th id="valueTotal">0</th>
+        </tr>
+      </tbody>
+    </thead>
+  </table>
+</div>
+    <script src="10.js"></script>
+  </body>
+</html>
