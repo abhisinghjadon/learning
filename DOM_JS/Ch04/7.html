@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      img {
+        width: 350px;
+        height: 250px;
+        border-radius: 20px;
+        border: 1px solid red;
+        margin-top: 5px;
+      }
+      img:hover {
+        transform: scale(1.2);
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      #cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        /*height:;*/
+        border: 2px double black;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: black;
+      }
+      button {
+        margin: 10px;
+        margin-left: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        padding: 2px;
+        border-radius: 15px;
+
+        background-color: rgb(82, 122, 215);
+        border: 1px solid greenyellow;
+      }
+      button:hover {
+        transform: scale(1.3);
+        background-color: lightgreen;
+        border: 1px solid greenyellow;
+        border-radius: 25px;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+      }
+      h2 {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <div id="cont">
+      <h1><u>Card</u></h1>
+      <br />
+      <img src="1.jpg" alt="" srcset="" />
+      <br />
+      <h2>Desktop</h2>
+      <br />
+      <div><button>View</button> <button id="btn">Add New Card</button></div>
+    </div>
+    <script src="7.js"></script>
+  </body>
+</html>
