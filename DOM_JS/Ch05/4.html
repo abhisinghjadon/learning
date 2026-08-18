@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Checkbox & Radio Selection Validation</h1>
+    <form action="" id="form">
+      <label for="name"
+        >Name:
+        <input type="text" name="name" id="name" />
+      </label>
+      <br />
+      <p>
+        Gender:
+        <label for="male"
+          >Male
+          <input type="radio" name="gender" id="male" value="male" />
+        </label>
+        <label for="female"
+          >Female
+          <input type="radio" name="gender" id="female" value="female" />
+        </label>
+      </p>
+
+      <label for="check"
+        ><input type="checkbox" name="check" id="check" value="true" /> Accept
+        Terms and Conditions</label
+      >
+      <br />
+      <br /><button type="submit">submit</button>
+    </form>
+    <pre id="data"></pre>
+    <script src="4.js"></script>
+  </body>
+</html>
