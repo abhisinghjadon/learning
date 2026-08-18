@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        border: 1px solid black;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Bubbling vs Capturing Demonstration</h1>
+    <div id="outer" style="padding: 20px; border: 2px solid red">
+      Outer Div
+      <div
+        id="inner"
+        style="padding: 20px; border: 2px solid blue; margin: 10px"
+      >
+        Inner Div
+        <div
+          id="child"
+          style="
+            padding: 10px;
+            border: 2px solid green;
+            margin: 10px;
+            cursor: pointer;
+          "
+        >
+          Button (Click Me)
+        </div>
+      </div>
+    </div>
+    <pre id="output"></pre>
+    <script src="2.js"></script>
+  </body>
+</html>
