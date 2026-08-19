@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dynamic Task Board (Complete DOM Integration)</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      .completed-task {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .filters {
+        margin-top: 15px;
+      }
+      button {
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dynamic Task Board</h2>
+
+    <!-- 1. Form to Add Task -->
+    <form id="add">
+      <input type="text" id="new" placeholder="Enter task name..." required />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- 2. Filter Buttons -->
+    <div class="filters" id="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <!-- 3. Task Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO.</th>
+          <th>Task</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="task-body"></tbody>
+    </table>
+
+    <script src="10.js"></script>
+  </body>
+</html>
