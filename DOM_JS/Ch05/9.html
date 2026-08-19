@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Animation - Intersection Observer</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .spacer {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        margin-bottom: 50px;
+      }
+
+      .animate-box {
+        width: 300px;
+        padding: 40px 20px;
+        margin: 50px auto;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+
+        opacity: 0;
+        transform: translateY(50px);
+        transition:
+          opacity 0.8s ease-out,
+          transform 0.8s ease-out;
+      }
+
+      /* 2. Active State (Fade-in & Slide-up) */
+      .animate-box.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spacer">
+      <h2>Scroll Down for Box 👇</h2>
+    </div>
+
+    <div class="animate-box">Box 1: Main Viewport me aa gaya!</div>
+    <div class="animate-box">Box 2: Smooth Fade-in Animation!</div>
+
+    <div class="spacer">
+      <h2>Page End</h2>
+    </div>
+
+    <script src="9.js"></script>
+  </body>
+</html>
