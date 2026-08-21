@@ -1,1 +1,1 @@
-This is my July August JAVASCRIPT practice 
+This is my July August JavaScript (JS) practice 
